@@ -1,6 +1,12 @@
+@import"../stylesComplementos/mixins";
+@import"../stylesComplementos/variables";
+
 *{
     font-family: 'Public Sans', sans-serif;
 }
 h1{
     font-weight: 400;
+}
+button{
+    @include botton()
 }

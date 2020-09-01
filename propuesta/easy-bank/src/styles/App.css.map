@@ -1,14 +1,20 @@
 {
     "version": 3,
-    "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,yBAAyB;CACzC;;AACD,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,GAAG;CACnB",
+    "mappings": "ACGA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,yBAAyB;CACzC;;AACD,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,GAAG;CACnB;;AACD,AAAA,MAAM,CAAA;ECRF,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,KAAK,ECMA,KAAgB;EDLrB,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,OAAO;EACf,aAAa,EAAE,KAAK;EACpB,gBAAgB,EAAE,gDAAqE;CDI1F;;AGRD,AAAA,GAAG,CAAA;EACC,OAAO,EAAE,IAAI;CAOhB;;AARD,AAIQ,GAJL,CAGC,EAAE,CACE,EAAE,CAAA;EACE,UAAU,EAAE,IAAI;CACnB",
     "sources": [
         "App.scss",
         "stylesComponents/_general.scss",
+        "stylesComplementos/_mixins.scss",
+        "stylesComplementos/_variables.scss",
         "stylesComponents/_nav.scss",
+        "stylesComplementos/_mixins.scss",
+        "stylesComplementos/_variables.scss",
         "stylesComponents/_main.scss",
+        "stylesComplementos/_mixins.scss",
+        "stylesComplementos/_variables.scss",
         "stylesComponents/_footer.scss",
-        "stylesComplementos/variables.scss",
-        "stylesComplementos/mixins.scss"
+        "stylesComplementos/_variables.scss",
+        "stylesComplementos/_mixins.scss"
     ],
     "names": [],
     "file": "App.css"

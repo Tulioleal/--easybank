@@ -1,0 +1,12 @@
+@import"../stylesComplementos/mixins";
+@import"../stylesComplementos/variables";
+
+nav{
+    display: flex;
+
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+}
