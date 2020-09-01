@@ -1,11 +1,14 @@
 {
     "version": 3,
-    "mappings": "AAIA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,yBAAyB;CACzC;;AACD,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,GAAG;CACnB",
+    "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,yBAAyB;CACzC;;AACD,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,GAAG;CACnB",
     "sources": [
         "App.scss",
-        "stylesComponents/Nav.scss",
-        "stylesComponents/Main.scss",
-        "stylesComponents/Footer.scss"
+        "stylesComponents/_general.scss",
+        "stylesComponents/_nav.scss",
+        "stylesComponents/_main.scss",
+        "stylesComponents/_footer.scss",
+        "stylesComplementos/variables.scss",
+        "stylesComplementos/mixins.scss"
     ],
     "names": [],
     "file": "App.css"

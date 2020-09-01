@@ -1,10 +1,6 @@
-@import "./stylesComponents/Nav";
-@import "./stylesComponents/Main";
-@import "./stylesComponents/Footer";
-
-*{
-    font-family: 'Public Sans', sans-serif;
-}
-h1{
-    font-weight: 400;
-}
+@import "./stylesComponents/general";
+@import "./stylesComponents/nav";
+@import "./stylesComponents/main";
+@import "./stylesComponents/footer";
+@import"./stylesComplementos/variables.scss";
+@import"./stylesComplementos/mixins.scss";
