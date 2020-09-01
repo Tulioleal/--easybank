@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,UAAU,EAAE,KAAK;EACjB,gBAAgB,EAAE,OAAiB;EACnC,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,WAAW,EAAE,MAAM;CACtB",
+    "mappings": "AAIA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,yBAAyB;CACzC;;AACD,AAAA,EAAE,CAAA;EACE,WAAW,EAAE,GAAG;CACnB",
     "sources": [
-        "App.scss"
+        "App.scss",
+        "stylesComponents/Nav.scss",
+        "stylesComponents/Main.scss",
+        "stylesComponents/Footer.scss"
     ],
     "names": [],
     "file": "App.css"

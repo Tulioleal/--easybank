@@ -1,8 +1,10 @@
-.home{
-    min-height: 100vh;
-    background-color: rgb(29, 148, 148);
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+@import "./stylesComponents/Nav";
+@import "./stylesComponents/Main";
+@import "./stylesComponents/Footer";
+
+*{
+    font-family: 'Public Sans', sans-serif;
+}
+h1{
+    font-weight: 400;
 }
