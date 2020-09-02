@@ -67,4 +67,8 @@ nav ul li a {
   color: #9698a6;
   text-decoration: none;
 }
+
+nav ul li a:hover {
+  color: #2d314d;
+}
 /*# sourceMappingURL=App.css.map */
