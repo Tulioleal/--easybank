@@ -1,7 +1,7 @@
 import React from 'react';
 import imagenes from '../assets/images'
 
-const Main = ({muckUp}) =>
+const Main = () =>
     <main>
         <div>
             <div className='paragrapgh'>
