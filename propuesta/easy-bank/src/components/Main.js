@@ -1,6 +1,7 @@
 import React from 'react';
+import imagenes from '../assets/images'
 
-const Main = () =>(
+const Main = ({muckUp}) =>
     <main>
         <div>
             <div className='paragrapgh'>
@@ -9,7 +10,7 @@ const Main = () =>(
                 <button>Request Invite</button>
             </div>
             <div>
-                <img src="" alt="Celulares"/>
+                <img src={imagenes.mockUps.imagen} alt={imagenes.mockUps.alt}/>
             </div>
         </div>
 
@@ -70,6 +71,5 @@ const Main = () =>(
             </article>
         </div>
     </main>
-)
 
 export default Main
