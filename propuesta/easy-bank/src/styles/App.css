@@ -1,14 +1,22 @@
 * {
   font-family: 'Public Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 h1 {
   font-weight: 400;
 }
 
-button {
-  height: 40px;
-  width: 155px;
+div {
+  position: relative;
+}
+
+div button {
+  height: 45px;
+  width: 170px;
   color: white;
   border: none;
   cursor: pointer;
@@ -17,13 +25,46 @@ button {
   background-image: linear-gradient(90deg, #31d35c 0%, #2bb7da 100%);
 }
 
+div button:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0%;
+  opacity: 35%;
+  width: 170px;
+  height: 46px;
+  background-color: #f3f4f6;
+}
+
 nav {
+  height: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav ul li {
   list-style: none;
+}
+
+nav ul li a {
+  color: #9698a6;
+  text-decoration: none;
 }
 /*# sourceMappingURL=App.css.map */

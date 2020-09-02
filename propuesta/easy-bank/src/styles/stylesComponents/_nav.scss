@@ -2,11 +2,23 @@
 @import"../stylesComplementos/variables";
 
 nav{
+    height: 6rem;
+
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
     ul{
+        width: 30%;
+        display: flex;
+        justify-content: space-evenly;
         li{
             list-style: none;
+
+            a{
+                color: $azulG;
+                text-decoration: none;
+            }
         }
     }
 }
