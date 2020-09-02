@@ -16,14 +16,15 @@ class App extends React.Component{
     render(){
         let {links} = this.state
         return(
-
-            <div className="App">
-                <Nav 
-                    links={links}
-                />
-                <Main />
-                <Footer />
-            </div>
+            <>
+                <div className="App">
+                    <Nav 
+                        links={links}
+                        />
+                    <Main />
+                    <Footer />
+                </div>
+            </>
         )
     }
 }
