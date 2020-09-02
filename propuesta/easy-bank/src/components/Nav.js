@@ -5,7 +5,9 @@ const Nav = ({links}) =>(
 
     <>
         <nav>
+
             <img src={imagenes.logo.imagen} alt={imagenes.logo.alt}/>
+
             <ul>
                 <li>
                     <a href={links}>Home</a>
@@ -24,8 +26,10 @@ const Nav = ({links}) =>(
                 </li>
             </ul>
 
-            <button>Request Invite</button>
-            
+            <div>
+                <button>Request Invite</button>
+            </div>
+    
         </nav>
     </>
 )
