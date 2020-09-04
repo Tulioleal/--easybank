@@ -1,6 +1,7 @@
 @mixin botton {
-    height: 45px;
-    width: 170px;
+    height: 48px;
+    width: 175px;
+    font-weight: 700;
     color: $blanco;
     border: none;
     cursor: pointer;
@@ -14,8 +15,8 @@
             position: absolute;
             top: 0%;
             opacity: 35%;
-            width: 170px;
-            height: 46px;
+            width: 175px;
+            height: 48px;
             background-color: $azulGC;
         }
     }

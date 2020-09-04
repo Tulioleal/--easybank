@@ -1,8 +1,171 @@
 @import"../stylesComplementos/mixins";
 @import"../stylesComplementos/variables";
 
-main{
+main {
+    .first {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        background-color: $grisMC;
 
+        article:first-child {
+            width: 33%;
+            height: 24em;
+            margin-left: 8%;
+            margin-top: 5em;
 
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 55px;
+            }
+
+            p {
+                padding-bottom: 2em;
+            }
+
+            div {
+                align-self: flex-start;
+            }
+        }
+
+        div:nth-child(2) {
+            height: 50%;
+
+            // .desktop{
+            //     display: block;
+            //     position: absolute;
+            //     top: -10em;
+            //     left: -61.25vw;
+            //     clip-path: inset(0 26% 0 0);
+            //     z-index: 0;
+            // }
+            //  .mockups{
+            //     display: block;
+            //     position: absolute;
+            //     left: -41.45vw;
+            //     top: -1.5em;
+            //     clip-path: inset(0 17% 0 0);
+            //     z-index: 2;
+            // }
+        }
+    }
+
+    .second {
+        height: 90vh;
+        z-index: 1;
+        background-color: $azulGC;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        article:first-child {
+            width: 45%;
+            margin-left: 8%;
+            padding-bottom: 5em;
+
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 2.5em;
+            }
+        }
+
+        div {
+            padding: 0 8%;
+            height: 45%;
+
+            display: flex;
+            justify-content: space-between;
+
+            section {
+                width: 21.95%;
+                height: 100%;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 30%;
+                }
+
+                h3 {
+                    font-size: 25px;
+
+                }
+
+                p {
+                    font-size: 17px;
+                }
+
+            }
+        }
+    }
+
+    .third {
+        height: 90vh;
+        background-color: $grisMC;
+        padding: 0 8%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            padding-bottom: 1.5em;
+        }
+        
+        .cards {
+            height: 58%;
+            display: flex;
+            justify-content: space-between;
+
+            article {
+                width: 21%;
+                
+                img {
+                    width: 100%;
+                    height: 12em;
+                    border-top-right-radius: .4em;
+                    border-top-left-radius: .4em;
+                }
+
+                div {
+                    width: 100%;
+                    height: 12em;
+                    padding: 1em;
+                    background-color: $blanco;
+                    border-bottom-right-radius: .4em;
+                    border-bottom-left-radius: .4em;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-size: .7em;
+                        display: block;
+                        width: 100%;
+                        color: $azulG;
+                    }
+
+                    h3 {
+                        align-self: center;
+                    }
+
+                    p {
+                        align-self: center;
+                        font-size: .9em;
+                        line-height: 1.2em;
+                    }
+                }
+
+            }
+        }
+    }
 
 }
