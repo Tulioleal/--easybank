@@ -13,6 +13,8 @@ import api from "./img/icon-api.svg"
 import budgeting from "./img/icon-budgeting.svg"
 import onboarding from "./img/icon-onboarding.svg"
 import online from "./img/icon-online.svg"
+import backgroundDt from "./img/bg-intro-desktop.svg"
+import backgroundMb from "./img/bg-intro-mobile.svg"
 
 //iconos
 import facebook from "./img/icon-facebook.svg"
@@ -82,5 +84,10 @@ export default {
     "logo":{
         "imagen" : logo,
         "alt" : "easy-bank"
+    },
+    "background":{
+        "imagenMb" : backgroundMb,
+        "imagenDt" : backgroundDt,
+        "alt" : "background"
     }
 }
