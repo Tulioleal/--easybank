@@ -1,3 +1,75 @@
-footer{
-    height: 10em;
+@import"../stylesComplementos/mixins";
+@import"../stylesComplementos/variables";
+
+footer {
+    height: 28vh;
+    background-color: $azulO;
+    padding: 0 12.5%;
+    color: $grisMC;
+
+    display: flex;
+    justify-content: space-between;
+
+    div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .logo {
+            width: 9em;
+        }
+
+        div {
+            width: 10em;
+            display: flex;
+            justify-content: space-between;
+
+            section:hover {
+                cursor: pointer;
+
+                .fill {
+                    fill: $verdeL;
+                }
+            }
+        }
+    }
+
+    div:nth-child(2) {
+        width: 28em;
+        display: flex;
+        justify-content: flex-start;
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                list-style: none;
+                line-height: 2em;
+                @include hover()
+            }
+        }
+
+        ul:nth-child(2) {
+            padding-left: 8em;
+        }
+    }
+
+    div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        div {
+            padding-bottom: 1.5em;
+        }
+
+        span {
+            font-weight: 400;
+            color: $azulG;
+        }
+    }
 }

@@ -60,26 +60,29 @@ div button:hover::before {
   opacity: 35%;
   width: 175px;
   height: 48px;
+  border-radius: 10rem;
   background-color: #f3f4f6;
 }
 
 nav {
   width: 100%;
-  height: 6rem;
+  height: 5.5rem;
   position: absolute;
   z-index: 100;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 nav ul {
+  height: 100%;
   width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,7 +93,30 @@ nav ul {
 }
 
 nav ul li {
+  height: 100%;
   list-style: none;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul li:hover:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4%;
+  width: 100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-image: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background-image: linear-gradient(to right, #31d35c, #2bb7da);
 }
 
 nav ul li a {
@@ -116,7 +142,7 @@ main .first {
 main .first article:first-child {
   width: 33%;
   height: 24em;
-  margin-left: 8%;
+  margin-left: 12.5%;
   margin-top: 5em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -164,7 +190,7 @@ main .second {
 
 main .second article:first-child {
   width: 45%;
-  margin-left: 8%;
+  margin-left: 12.5%;
   padding-bottom: 5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -180,7 +206,7 @@ main .second article:first-child h2 {
 }
 
 main .second div {
-  padding: 0 8%;
+  padding: 0 12.5%;
   height: 45%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,7 +217,7 @@ main .second div {
 }
 
 main .second div section {
-  width: 21.95%;
+  width: 23.15%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,13 +236,13 @@ main .second div section h3 {
 }
 
 main .second div section p {
-  font-size: 17px;
+  font-size: 16px;
 }
 
 main .third {
   height: 90vh;
   background-color: #fafafa;
-  padding: 0 8%;
+  padding: 0 12.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -244,7 +270,7 @@ main .third .cards {
 }
 
 main .third .cards article {
-  width: 21%;
+  width: 23.15%;
 }
 
 main .third .cards article img {
@@ -268,36 +294,140 @@ main .third .cards article div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main .third .cards article div span {
   font-size: .7em;
-  display: block;
   width: 100%;
   color: #9698a6;
 }
 
 main .third .cards article div h3 {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  font-size: 1.1em;
+}
+
+main .third .cards article div h3:hover {
+  fill: #31d35c;
+  color: #31d35c;
+  cursor: pointer;
 }
 
 main .third .cards article div p {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  font-size: .9em;
+  font-size: .88em;
   line-height: 1.2em;
 }
 
 footer {
-  height: 10em;
+  height: 28vh;
+  background-color: #2d314d;
+  padding: 0 12.5%;
+  color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer div:first-child .logo {
+  width: 9em;
+}
+
+footer div:first-child div {
+  width: 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer div:first-child div section:hover {
+  cursor: pointer;
+}
+
+footer div:first-child div section:hover .fill {
+  fill: #31d35c;
+}
+
+footer div:nth-child(2) {
+  width: 28em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+footer div:nth-child(2) ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div:nth-child(2) ul li {
+  list-style: none;
+  line-height: 2em;
+}
+
+footer div:nth-child(2) ul li:hover {
+  fill: #31d35c;
+  color: #31d35c;
+  cursor: pointer;
+}
+
+footer div:nth-child(2) ul:nth-child(2) {
+  padding-left: 8em;
+}
+
+footer div:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+footer div:nth-child(3) div {
+  padding-bottom: 1.5em;
+}
+
+footer div:nth-child(3) span {
+  font-weight: 400;
+  color: #9698a6;
 }
 /*# sourceMappingURL=App.css.map */

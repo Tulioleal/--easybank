@@ -1,13 +1,16 @@
 //Colores
 $azulO: hsl(233, 26%, 24%);
-$verdeLima: hsl(136, 65%, 51%);
-$cyanB: hsl(192, 70%, 51%);
+$verdeL: hsl(136, 65%, 51%);    //#30D35C
+$cyanB: hsl(192, 70%, 51%);     //2AB6D9
 
 //Colores neutrales
 $azulG: hsl(233, 8%, 62%);
 $azulGC: hsl(220, 16%, 96%);
 $grisMC: hsl(0, 0%, 98%);
 $blanco: hsl(0, 0%, 100%);
+
+//gradiente
+$gradiente : linear-gradiente(90deg, $verdeL 0%, $cyanB 100%);
 
 //Tamaño de letra
 $size: 18px;
