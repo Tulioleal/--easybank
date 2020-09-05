@@ -6,7 +6,8 @@ import plane from "./img/image-plane.jpg";
 import restaurant from "./img/image-restaurant.jpg";
 
 //logo
-import logo from "./img/logo.svg"
+import logoA from "./img/logo.svg"
+import logoB from "./img/logo-blanco.svg"
 
 //svg
 import api from "./img/icon-api.svg"
@@ -82,7 +83,8 @@ export default {
         "alt" : "youtube"
     },
     "logo":{
-        "imagen" : logo,
+        "imagenA" : logoA,
+        "imagenB" : logoB,
         "alt" : "easy-bank"
     },
     "background":{

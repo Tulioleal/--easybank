@@ -6,7 +6,7 @@ const Nav = ({links}) =>(
     <>
         <nav>
 
-            <img src={imagenes.logo.imagen} alt={imagenes.logo.alt}/>
+            <img src={imagenes.logo.imagenA} alt={imagenes.logo.alt}/>
 
             <ul>
                 <li>
