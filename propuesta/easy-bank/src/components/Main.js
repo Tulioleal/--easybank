@@ -14,9 +14,9 @@ const Main = () =>
                     </div>
                 </article>
                 <div>
-                    {/* <img className='desktop' src={imagenes.background.imagenDt} alt={imagenes.background.imagenMb}></img>
-                    {/* <img className='mobile' src={imagenes.background.imagenMb} alt={imagenes.background.imagenMb}></img> */}
-                     {/* <img className='mockups' src={imagenes.mockUps.imagen} alt={imagenes.mockUps.alt}/> */}
+                    <div className='mockups'>
+
+                    </div>
                 </div>
             </div>
 
