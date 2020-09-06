@@ -17,8 +17,11 @@ footer {
 
         .logo {
             width: 9em;
-        }
 
+            .fill1{
+                fill:$blanco
+        }
+    }
         div {
             width: 10em;
             display: flex;
@@ -46,6 +49,7 @@ footer {
             justify-content: center;
 
             li {
+                color: $azulGC;
                 list-style: none;
                 line-height: 2em;
                 @include hover()
