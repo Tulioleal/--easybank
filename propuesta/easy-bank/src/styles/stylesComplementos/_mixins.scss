@@ -7,10 +7,10 @@
     border: none;
     cursor: pointer;
     border-radius: 10rem;
-    background-image: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+    background-image: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(43, 183, 218, 1) 100%);
 
-    &:hover{
-        &::before{
+    &:hover {
+        &::before {
             content: "";
             display: block;
             position: absolute;
@@ -24,25 +24,25 @@
     }
 }
 
-@mixin hover{
-    &:hover{
+@mixin hover {
+    &:hover {
         fill: $verdeL;
         color: $verdeL;
         cursor: pointer;
     }
 }
 
-@mixin links{
-    &:hover{
-        
-        &:before{
-			content: '';
+@mixin links {
+    &:hover {
+
+        &:before {
+            content: '';
             position: absolute;
-            bottom:0;
+            bottom: 0;
             left: 0;
-            height:5%;
+            height: 5%;
             width: 100%;
-			transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
             background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
         }
     }

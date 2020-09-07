@@ -18,10 +18,11 @@ footer {
         .logo {
             width: 9em;
 
-            .fill1{
-                fill:$blanco
+            .fill1 {
+                fill: $blanco
+            }
         }
-    }
+
         div {
             width: 10em;
             display: flex;
@@ -38,7 +39,7 @@ footer {
     }
 
     div:nth-child(2) {
-        width: 28em;
+        width: 40%;
         display: flex;
         justify-content: flex-start;
 

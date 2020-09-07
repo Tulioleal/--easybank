@@ -9,54 +9,55 @@ main {
         background-color: $grisMC;
 
         article:first-child {
-            width: 48%;
-            height: 24em;
+            width: 43%;
+            height: 50%;
             padding-left: 12.5%;
-            margin-top: 8em;
+            margin-top: 9rem;
 
             align-self: center;
             justify-content: center;
             align-items: center;
 
             h1 {
+                min-width: 7.5em;
                 font-size: 3.5em;
             }
 
             p {
+                min-width: 21.5em;
                 font-size: 1.15em;
-                padding-bottom: 2em;
-            }
-
-            div {
-                align-self: flex-start;
+                padding-bottom: 8%;
             }
         }
 
         div:nth-child(2) {
             height: 118%;
-            width: 65%;
+            width: 57%;
 
-            background-image: url(../assets/img/bg-intro-desktop.svg);         
+            background-image: url(../assets/img/bg-intro-desktop.svg);
             background-repeat: no-repeat;
-            background-size: 155%;
+            background-size: 153%;
             background-position: bottom left;
+            position: relative;
 
-            .mockups{
-                height: 110%;
-                width: 77.7%;
-                background-image: url(../assets/img/image-mockups.png);  
+            display: flex;
+            justify-content: flex-end;
+
+            .mockups {
+                height: 60em;
+                width: 75.1%;
+                background-image: url(../assets/img/image-mockups.png);
                 background-repeat: no-repeat;
                 background-size: cover;
-                position: relative;
-                left: 12em;
-                bottom: 2.5em;
+                background-position: left top;
+                top: -4%;
                 z-index: 2;
             }
         }
     }
 
     .second {
-        height: 95vh;
+        min-height: 95vh;
         z-index: 1;
         background-color: $azulGC;
 
@@ -65,31 +66,35 @@ main {
         justify-content: center;
 
         article:first-child {
-            width: 44%;
+            width: 50%;
             margin-left: 12.5%;
             padding-bottom: 3.5em;
-            
+
             display: flex;
             flex-direction: column;
-            
+
             h2 {
                 font-size: 2.5em;
             }
-            p{
+
+            p {
                 font-size: 1.13em;
             }
         }
 
-        div {
+        .articles {
             padding: 0 12.5%;
             height: 40%;
 
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2.5%;
 
             section {
-                width: 23.15%;
-                height: 100%;
+                height: 18em;
+                min-width: 10em;
+                margin: 1em 0;
                 display: flex;
                 justify-content: space-between;
 
@@ -105,7 +110,6 @@ main {
                 p {
                     font-size: 16px;
                 }
-
             }
         }
     }
@@ -120,17 +124,17 @@ main {
         justify-content: center;
 
         h2 {
-            padding-bottom: 1.5em;
+            margin-bottom: 2.5%;
         }
-        
+
         .cards {
-            height: 58%;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2.5%;
 
             article {
-                width: 23.15%;
-                
+
                 img {
                     width: 100%;
                     height: 12em;
@@ -156,7 +160,7 @@ main {
                         color: $azulG;
                     }
 
-                    h3{
+                    h3 {
                         font-size: 1.1em;
                         @include hover()
                     }
