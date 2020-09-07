@@ -1,0 +1,129 @@
+@import'./mixins';
+@import'./variables';
+
+@media screen and (max-width: 1243px) {
+    nav {
+        justify-content: space-around;
+
+        ul{
+            justify-content: space-between;
+        }
+    }
+
+    main {
+        .first {
+
+            article:first-child {
+                padding-left: 7%;
+                width: 30%;
+
+                h1 {
+                    font-size: 3em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                    min-width: 20em;
+                }
+            }
+
+            div:nth-child(2) {
+                background-size: 200%;
+                background-position: center left;
+            }
+        }
+
+        .second {
+            height: 125vh;
+
+            article:first-child {
+                margin-left: 8%;
+
+                h2 {
+                    font-size: 2.3em;
+                }
+
+                p {
+                    font-size: 1.2em;
+                }
+            }
+
+            .articles {
+                height: 70%;
+                padding: 0 8%;
+
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5%;
+
+                section {
+                    width: 100%;
+                    align-items: center;
+                    margin: 0;
+
+                    img {
+                        align-self: center;
+                        width: 7em;
+                    }
+
+                    h3 {
+                        width: fit-content;
+                        font-size: 1.8em;
+                        align-self: center;
+                    }
+
+                    p {
+                        width: 90%;
+                        font-size: 1.1em;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
+        .third {
+            height: min-content;
+            padding: 3% 8%;
+            justify-content: flex-start;
+
+            h2{
+            }
+
+            .cards {
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
+
+                article {
+                    img {
+                        width: 100%;
+                        height: 14em;
+
+                    }
+                    div{
+                        height: 10em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    footer {
+        div:nth-child(2) {
+            justify-content: center;
+
+            ul:nth-child(2) {
+                padding-left: 3em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    main{
+        .first{
+            
+        }
+    }
+}
