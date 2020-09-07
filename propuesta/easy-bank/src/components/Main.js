@@ -14,9 +14,7 @@ const Main = () =>
                     </div>
                 </article>
                 <div>
-                    <div className='mockups'>
-
-                    </div>
+                    <div className='mockups'></div>
                 </div>
             </div>
 
@@ -25,8 +23,8 @@ const Main = () =>
                     <h2>Why choose Easybank?</h2>
                     <p>We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before.</p>
                 </article>
-                <div>
-                    <section className="paragraph">
+                <div className='articles'>
+                    <section className="paragraph">   
                         <img src={imagenes.online.imagen} alt={imagenes.online.alt}/>
                         <h3>Online Banking</h3>
                         <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
@@ -51,7 +49,7 @@ const Main = () =>
 
             <div className='third'>
                 <h2>Latest Articles</h2>
-                <div className='cards'>
+                <div className='articles cards'>
                     <article>
                         <img src={imagenes.currency.imagen} alt={imagenes.currency.alt}/>
                         <div>
